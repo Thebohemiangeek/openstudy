@@ -12,7 +12,6 @@ const url = "http://leads.beta.openstudycollege.info/getTopLeads";
 fetch(url)
   .then((resp) => resp.json())
   .then(function (data) {
-    console.log(data);
     return data.map(function (item) {
       const card = document.createElement("article");
       card.classList = "card-body";
